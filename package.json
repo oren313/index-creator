@@ -6,11 +6,20 @@
   "scripts": {
     "test": "test",
     "build": "npm run build:js",
-    "start": "node index.js"
+    "start": "node ./index.js"
   },
   "keywords": [
-    "index", "index-creator", "index.ts", "index.js", "index.jsx"
+    "index",
+    "index-creator",
+    "index.ts",
+    "index.js",
+    "index.jsx"
   ],
   "author": "oren313",
-  "license": "MIT"
+  "license": "MIT",
+  "dependencies": {
+    "chalk": "^3.0.0",
+    "figlet": "^1.3.0",
+    "inquirer": "^7.1.0"
+  }
 }

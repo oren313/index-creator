@@ -1,17 +1,14 @@
-import chalk from 'chalk';
-import IndexCreator from './lib/index-creator';
-import {askDirectoryPath} from './lib/user-input';
-clear();
+const chalk = require('chalk');
+const figlet = require('figlet');
+const {createIndex} = require('./lib/index-creator');
+const {askDirectoryPath} = require('./lib/user-input');
 
 console.log(
     chalk.yellow(
-      figlet.textSync('Index creator', { horizontalLayout: 'full' })
+      figlet.textSync('Index Creator', { horizontalLayout: 'full' })
     )
 );
 
-const run = async () => {
-    const {directoryPath, extension} = await askDirectoryPath();
-    console.log(directoryPath, extension);
-  };
-  
-  run();
+askDirectoryPath().then(function ({directoryPath, extension}) {
+  createIndex(directoryPath, extension);
+});
