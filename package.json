@@ -1,0 +1,16 @@
+{
+  "name": "index-creator",
+  "version": "0.0.1",
+  "description": "node module that creates index files in specific directories",
+  "main": "index.js",
+  "scripts": {
+    "test": "test",
+    "build": "npm run build:js",
+    "start": "node index.js"
+  },
+  "keywords": [
+    "index", "index-creator", "index.ts", "index.js", "index.jsx"
+  ],
+  "author": "oren313",
+  "license": "MIT"
+}
