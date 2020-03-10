@@ -5,6 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test": "test",
+    "bundle": "node ./index.js D:\\index-creator\\lib .js",
     "build": "npm run build:js",
     "start": "node ./index.js"
   },

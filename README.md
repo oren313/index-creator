@@ -3,7 +3,7 @@ node module that creates index files in specific directories
 
 ## Installation
 ```bash
-    $ npm install index-creator
+    $ npm install index-creator --save-dev
 ```
 
 ## Usage
